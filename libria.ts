@@ -130,6 +130,6 @@ function getPoster(data) {
   const episode = data.episodes[0];
 
   if (episode.preview && episode.preview.preview)
-    return `https://anixart.libria.fun${episode.preview.preview}`;
-  return `https://anilibria.top${data.poster.preview}`;
+    return `https://anilibria.top${episode.preview.preview}`;
+  return `https://anilibria.top${data.posters.preview}`;
 }
